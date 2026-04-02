@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import { getAllDistricts, formatRunTimestamp, type DistrictRecord } from '@/lib/pipeline'
 import { StatusDot } from '@/components/StatusDot'
+import { TierBadge } from '@/components/TierBadge'
 import { StartPipelineButton } from '@/components/StartPipelineButton'
 import { TierChart } from '@/components/TierChart'
-import { ChevronRight, LayoutGrid, Clock } from 'lucide-react'
+import { ChevronRight, LayoutGrid, Clock, ShieldAlert } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -24,18 +25,32 @@ function DistrictCard({ d }: { d: DistrictRecord }) {
       <div className="group relative bg-zinc-900/70 border border-zinc-800 rounded-2xl p-5 hover:bg-zinc-900 hover:border-zinc-700 transition-all duration-200 cursor-pointer h-full flex flex-col">
 
         <div className="flex-1 min-w-0 mb-4">
-          <p className="text-base font-semibold text-zinc-100 leading-tight truncate">
-            {d.district_name}
-          </p>
+          <div className="flex items-start justify-between gap-2">
+            <p className="text-base font-semibold text-zinc-100 leading-tight truncate">
+              {d.district_name}
+            </p>
+            {d.tier && <TierBadge tier={d.tier} size="sm" />}
+          </div>
           {d.website_url && (
             <p className="text-xs text-zinc-600 mt-1 truncate">{d.website_url.replace(/^https?:\/\//, '')}</p>
           )}
+          {d.competitor && (
+            <div className="flex items-center gap-1.5 mt-2">
+              <ShieldAlert className="w-3 h-3 text-orange-400" />
+              <span className="text-xs text-orange-400">{d.competitor}</span>
+            </div>
+          )}
         </div>
 
-        {/* Status */}
+        {/* Status + Score */}
         <div className="mt-auto pt-3 border-t border-zinc-800/60 flex items-center justify-between">
           <StatusDot status={d.status} />
-          <ChevronRight className="w-4 h-4 text-zinc-700 group-hover:text-zinc-500 transition-colors" />
+          <div className="flex items-center gap-2">
+            {d.normalized_score > 0 && (
+              <span className="text-xs font-mono text-zinc-500">{d.normalized_score}/100</span>
+            )}
+            <ChevronRight className="w-4 h-4 text-zinc-700 group-hover:text-zinc-500 transition-colors" />
+          </div>
         </div>
       </div>
     </Link>

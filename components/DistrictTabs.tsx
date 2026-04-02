@@ -3,8 +3,8 @@ import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import { EmailCard } from '@/components/EmailCard'
 import { ContactsTable } from '@/components/ContactsTable'
-import { BookOpen, Mail, Target, Users } from 'lucide-react'
-import type { StrategyEmail, Contact } from '@/lib/pipeline'
+import { BookOpen, Mail, Target, Users, ShieldAlert } from 'lucide-react'
+import type { StrategyEmail, Contact, CompetitorAnalysis } from '@/lib/pipeline'
 
 type TabId = 'intel' | 'contacts' | 'strategy' | 'emails'
 
@@ -137,10 +137,54 @@ interface Props {
   emails: StrategyEmail[]
   contacts: Contact[]
   status: string
+  competitor: string | null
+  competitorAnalysis: CompetitorAnalysis[]
 }
 
-export function DistrictTabs({ intelBrief, strategy, sapDoc, emails, contacts, status }: Props) {
+function SkippedState({ icon: Icon, reason }: { icon: React.FC<{ className?: string }>; reason: string }) {
+  return (
+    <div className="bg-zinc-900/50 border border-orange-500/20 rounded-2xl p-12 text-center">
+      <Icon className="w-8 h-8 text-orange-400/60 mx-auto mb-3" />
+      <p className="text-sm text-zinc-400">{reason}</p>
+    </div>
+  )
+}
+
+function CompetitorEvidence({ analysis }: { analysis: CompetitorAnalysis[] }) {
+  if (!analysis.length) return null
+  return (
+    <div className="mt-4 bg-zinc-900/50 border border-orange-500/20 rounded-xl p-4 space-y-3">
+      <p className="text-xs font-bold text-orange-400 uppercase tracking-wider">Competitor Evidence</p>
+      {analysis.map((c, i) => (
+        <div key={i} className="text-sm space-y-1">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold text-zinc-200">{c.name}</span>
+            <span className={`text-xs px-1.5 py-0.5 rounded ${
+              c.status === 'active' ? 'bg-red-500/15 text-red-400' :
+              c.status === 'evaluating' ? 'bg-amber-500/15 text-amber-400' :
+              'bg-zinc-800 text-zinc-500'
+            }`}>{c.status}</span>
+          </div>
+          {c.evidence && <p className="text-zinc-400 text-xs leading-relaxed">{c.evidence}</p>}
+          {c.used_for && <p className="text-zinc-500 text-xs">Used for: {c.used_for}</p>}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export function DistrictTabs({
+  intelBrief, strategy, sapDoc, emails, contacts,
+  status, competitor, competitorAnalysis,
+}: Props) {
   const [tab, setTab] = useState<TabId>('intel')
+
+  const isSkipped = status === 'competitor' || status === 'sensitive'
+  const skipReason = status === 'competitor'
+    ? `Competitor detected (${competitor}) — intel skipped.`
+    : status === 'sensitive'
+    ? 'District flagged sensitive — outreach skipped.'
+    : ''
 
   const tabs: { id: TabId; label: string; icon: React.ReactNode; count?: number }[] = [
     { id: 'intel',    label: 'Intel Brief', icon: <BookOpen className="w-3.5 h-3.5" /> },
@@ -152,13 +196,13 @@ export function DistrictTabs({ intelBrief, strategy, sapDoc, emails, contacts, s
   return (
     <div>
       {/* Tab bar */}
-      <div className="flex items-center gap-1 mb-6 border-b border-zinc-800">
+      <div className="flex items-center gap-1 mb-6 border-b border-zinc-800 overflow-x-auto">
         {tabs.map(t => (
           <button
             key={t.id}
             onClick={() => setTab(t.id)}
             className={`
-              inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors
+              inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors whitespace-nowrap
               ${tab === t.id
                 ? 'border-purple-500 text-zinc-100'
                 : 'border-transparent text-zinc-500 hover:text-zinc-300'}
@@ -178,7 +222,12 @@ export function DistrictTabs({ intelBrief, strategy, sapDoc, emails, contacts, s
       {/* ── Intel tab ──────────────────────────────────────────────────────── */}
       {tab === 'intel' && (
         <div>
-          {intelBrief ? (
+          {isSkipped ? (
+            <>
+              <SkippedState icon={ShieldAlert} reason={skipReason} />
+              <CompetitorEvidence analysis={competitorAnalysis} />
+            </>
+          ) : intelBrief ? (
             <IntelBrief md={intelBrief} />
           ) : (
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-12 text-center">
@@ -197,7 +246,9 @@ export function DistrictTabs({ intelBrief, strategy, sapDoc, emails, contacts, s
           ) : (
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-12 text-center">
               <Users className="w-8 h-8 text-zinc-700 mx-auto mb-3" />
-              <p className="text-sm text-zinc-600">No contacts extracted yet.</p>
+              <p className="text-sm text-zinc-600">
+                {isSkipped ? `${skipReason.replace(' — intel skipped.', '').replace(' — outreach skipped.', '')} — no contacts extracted.` : 'No contacts extracted yet.'}
+              </p>
             </div>
           )}
         </div>
@@ -206,7 +257,9 @@ export function DistrictTabs({ intelBrief, strategy, sapDoc, emails, contacts, s
       {/* ── Strategy tab ───────────────────────────────────────────────────── */}
       {tab === 'strategy' && (
         <div>
-          {!sapDoc ? (
+          {isSkipped ? (
+            <SkippedState icon={ShieldAlert} reason={skipReason.replace('intel', 'strategy')} />
+          ) : !sapDoc ? (
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-12 text-center">
               <Target className="w-8 h-8 text-zinc-700 mx-auto mb-3" />
               <p className="text-sm text-zinc-600">No strategy generated yet.</p>
@@ -220,11 +273,11 @@ export function DistrictTabs({ intelBrief, strategy, sapDoc, emails, contacts, s
       {/* ── Emails tab ─────────────────────────────────────────────────────── */}
       {tab === 'emails' && (
         <div>
-          {emails.length === 0 ? (
+          {isSkipped || emails.length === 0 ? (
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-12 text-center">
               <Mail className="w-8 h-8 text-zinc-700 mx-auto mb-3" />
               <p className="text-sm text-zinc-600">
-                {status === 'competitor' ? 'Competitor detected — no strategy generated.' :
+                {status === 'competitor' ? `Competitor detected (${competitor}) — no emails generated.` :
                  status === 'sensitive'  ? 'District flagged sensitive — no outreach.' :
                  'Run the pipeline to completion to generate emails.'}
               </p>
