@@ -1,4 +1,4 @@
-import { Check, Circle, Database, Filter, Globe, FileText, Search, Share2, BarChart3, Target, Mail, ShieldX } from 'lucide-react'
+import { Check, Circle, Database, Filter, Globe, FileText, Search, Share2, Target, Mail, ShieldX } from 'lucide-react'
 import type { StageMeta } from '@/lib/pipeline'
 
 const STAGES = [
@@ -8,9 +8,8 @@ const STAGES = [
   { key: 'scraping',          altKey: '05_scraping',       label: 'Scraping',         icon: Search,      step: 5 },
   { key: 'social_media',      altKey: '05.5_social',       label: 'Social Media',     icon: Share2,      step: 5.5 },
   { key: 'intel_extraction',  altKey: '06_intel',          label: 'Intel Extraction', icon: FileText,    step: 6 },
-  { key: 'scoring',           altKey: '07_scoring',        label: 'Scoring',          icon: BarChart3,   step: 7 },
-  { key: 'strategy',          altKey: '08_strategy',       label: 'Strategy',         icon: Target,      step: 8 },
-  { key: 'email_cadence',     altKey: '09_emails',         label: 'Email Cadence',    icon: Mail,        step: 9 },
+  { key: 'strategy',           altKey: '07_strategy',       label: 'Strategy',         icon: Target,      step: 7 },
+  { key: 'email_cadence',     altKey: '08_emails',         label: 'Email Cadence',    icon: Mail,        step: 8 },
 ] as const
 
 function formatDuration(s: number): string {
@@ -99,8 +98,7 @@ export function PipelineStages({ stages, status }: Props) {
                     {stage.key === 'scraping' && `${((meta.total_chars as number) / 1000).toFixed(0)}K chars`}
                     {stage.key === 'social_media' && `${meta.signal_posts} posts`}
                     {stage.key === 'intel_extraction' && `${meta.contacts_found} contacts`}
-                    {stage.key === 'scoring' && `${meta.normalized_score}/100`}
-                    {stage.key === 'strategy' && `${((meta.sap_chars as number) / 1000).toFixed(1)}K`}
+                    {stage.key === 'strategy' && meta.normalized_score != null && `${meta.normalized_score}/100`}
                     {stage.key === 'email_cadence' && `${meta.emails_generated} emails`}
                   </span>
                 )}

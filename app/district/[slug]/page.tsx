@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import {
-  getAllDistricts, getIntelBrief, getStrategy, getSAPDoc,
-  getContacts, getRunMeta, getEmails,
+  getAllDistricts, getIntelBrief, getSAPDoc,
+  getContacts, getRunMeta, getEmails, getStrategyResult,
 } from '@/lib/pipeline'
 import { StatusDot } from '@/components/StatusDot'
 import { ScoreRing } from '@/components/ScoreRing'
@@ -22,8 +22,8 @@ export default function DistrictPage({ params }: { params: { slug: string } }) {
   if (!record) notFound()
 
   const intelBrief = getIntelBrief(slug)
-  const strategy = getStrategy(slug)
   const sapDoc = getSAPDoc(slug)
+  const strategyResult = getStrategyResult(slug)
   const contacts = getContacts(slug)
   const runMeta = getRunMeta(slug)
   const emails = getEmails(slug)
@@ -130,8 +130,8 @@ export default function DistrictPage({ params }: { params: { slug: string } }) {
       {/* ── Tabs ───────────────────────────────────────────────────────────── */}
       <DistrictTabs
         intelBrief={intelBrief}
-        strategy={strategy}
         sapDoc={sapDoc}
+        strategyResult={strategyResult}
         emails={emails}
         contacts={contacts}
         status={record.status}

@@ -44,20 +44,10 @@ export interface RunSummary {
 export interface StrategyEmail {
   email_number?: number
   number?: number
-  type?: string
-  name?: string
   subject_line?: string
   subject_lines?: { A?: string; B?: string; C?: string }
-  preview_text?: string
   body: string
   send_day: string | number
-  personalization_facts?: string[]
-  personalization_elements?: string[]
-  cascades_features_mentioned?: string[]
-  fact_references?: Record<string, string> | string[]
-  cta?: string
-  ps_line?: string
-  intent?: string
 }
 
 export interface Strategy {
@@ -152,8 +142,8 @@ export interface ScrapingStats {
   pages?: Array<{ url: string; chars: number; source: string }>
 }
 
-/** Scoring result from Stage 7 */
-export interface ScoringResult {
+/** Strategy result from Stage 7 (SAP + scoring) */
+export interface StrategyResult {
   district_name: string
   raw_score: number
   normalized_score: number
@@ -162,14 +152,12 @@ export interface ScoringResult {
     signal_index: number
     category: string
     relevance_score: number
-    matched_keywords: string[]
+    internal_indication: string
+    capability_alignment: string
   }>
-  bonus_points?: Record<string, number>
-  // Strategy fields (Stage 7 now merges scoring + strategy in single call)
-  sap_markdown?: string
-  opening_angle?: string
-  strategy_notes?: string
-  key_signals?: string[]
+  sap_markdown: string
+  num_emails: number
+  interval_days: number
   model_used?: string
 }
 
@@ -244,43 +232,13 @@ export function getIntelBrief(slug: string): string | null {
     ?? readText(path.join(FINAL_DIR, `${slug}_intel.md`))
 }
 
-/** Read strategy JSON — new path first, then merged in scoring, then legacy */
-export function getStrategy(slug: string): Strategy | null {
-  // Try separate strategy file first
-  const separate = readJSON<Strategy>(districtFile(slug, '08_strategy.json'))
-  if (separate) return separate
-
-  // Fall back to merged scoring (Stage 7 now combines scoring + strategy)
-  const scoring = readJSON<ScoringResult>(districtFile(slug, '07_scoring.json'))
-  if (scoring && (scoring.sap_markdown || scoring.opening_angle || scoring.strategy_notes)) {
-    return {
-      district_name: scoring.district_name,
-      tier: scoring.tier,
-      score: scoring.normalized_score,
-      opening_angle: scoring.opening_angle || '',
-      strategy_notes: scoring.strategy_notes || '',
-      emails: [],
-    } as Strategy
-  }
-
-  // Legacy fallback
-  return readJSON<Strategy>(path.join(STRATEGIES_DIR, `${slug}.json`))
-}
-
-/** Read SAP markdown — new path first, merged in scoring, then legacy */
+/** Read SAP markdown — Stage 7 output */
 export function getSAPDoc(slug: string): string | null {
-  // Try separate SAP file first
-  const separate = readText(districtFile(slug, '08_sap.md'))
-  if (separate) return separate
-
-  // Fall back to merged scoring (Stage 7 now combines scoring + strategy)
-  const scoring = readJSON<ScoringResult>(districtFile(slug, '07_scoring.json'))
-  if (scoring?.sap_markdown) {
-    return `# Strategic Alignment Plan: ${scoring.district_name}\n\n${scoring.sap_markdown}\n`
-  }
-
-  // Legacy fallback
-  return readText(path.join(STRATEGIES_DIR, `${slug}_sap.md`))
+  // New path: 07_sap.md (Stage 7)
+  return readText(districtFile(slug, '07_sap.md'))
+    // Legacy fallbacks
+    ?? readText(districtFile(slug, '08_sap.md'))
+    ?? readText(path.join(STRATEGIES_DIR, `${slug}_sap.md`))
     ?? readText(path.join(FINAL_DIR, `${slug}_strategy.md`))
 }
 
@@ -324,9 +282,9 @@ export function getScrapingStats(slug: string): ScrapingStats | null {
   return readJSON<ScrapingStats>(districtFile(slug, '05_scraping.json'))
 }
 
-/** Read scoring result (Stage 7) */
-export function getScoringResult(slug: string): ScoringResult | null {
-  return readJSON<ScoringResult>(districtFile(slug, '07_scoring.json'))
+/** Read strategy result (Stage 7) */
+export function getStrategyResult(slug: string): StrategyResult | null {
+  return readJSON<StrategyResult>(districtFile(slug, '07_strategy.json'))
 }
 
 /** Read emails — Stage 8 (was 9), then legacy */

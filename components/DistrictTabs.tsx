@@ -4,12 +4,12 @@ import ReactMarkdown from 'react-markdown'
 import { EmailCard } from '@/components/EmailCard'
 import { ContactsTable } from '@/components/ContactsTable'
 import { BookOpen, Mail, Target, Users, ShieldAlert } from 'lucide-react'
-import type { StrategyEmail, Contact, CompetitorAnalysis } from '@/lib/pipeline'
+import type { StrategyEmail, Contact, CompetitorAnalysis, StrategyResult } from '@/lib/pipeline'
 
 type TabId = 'intel' | 'contacts' | 'strategy' | 'emails'
 
 
-// ─── Intel Brief renderer (react-markdown) ──────────────────────────────────
+// ─── Intel Brief renderer ────────────────────────────────────────────────────
 
 function IntelBrief({ md }: { md: string }) {
   return (
@@ -78,62 +78,90 @@ function IntelBrief({ md }: { md: string }) {
   )
 }
 
-// ─── SAP table renderer ───────────────────────────────────────────────────────
 
-function SAPTable({ md }: { md: string }) {
-  const lines = md.split('\n').filter(l => l.trim())
-  const tableLines = lines.filter(l => l.trim().startsWith('|'))
-  const nonTableLines = lines.filter(l => !l.trim().startsWith('|'))
+// ─── SAP View — signal cards from 07_strategy.json ──────────────────────────
 
-  const parseRow = (line: string) =>
-    line.split('|').map(c => c.trim()).filter((_, i, arr) => i > 0 && i < arr.length - 1)
+function StatPill({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="bg-zinc-900/60 border border-zinc-800 rounded-lg px-4 py-3 text-center">
+      <p className="text-xs text-zinc-600 uppercase tracking-wider mb-0.5">{label}</p>
+      <p className="text-sm font-semibold text-zinc-200">{value}</p>
+    </div>
+  )
+}
 
-  const rows = tableLines.filter(l => !l.match(/^\|[-\s|]+\|$/))
-  const [headerRow, ...dataRows] = rows
-  const headers = headerRow ? parseRow(headerRow) : []
-  const data = dataRows.map(parseRow)
+type SignalMatch = StrategyResult['matched_signals'][0]
+
+function SignalCard({ signal, index }: { signal: SignalMatch; index: number }) {
+  const [expanded, setExpanded] = useState(index === 0)
 
   return (
-    <div className="space-y-4">
-      {nonTableLines.length > 0 && (
-        <p className="text-xs text-zinc-500">{nonTableLines.join(' ')}</p>
-      )}
-      {headers.length > 0 && (
-        <div className="overflow-x-auto rounded-xl border border-zinc-800">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-zinc-800 bg-zinc-900/60">
-                {headers.map((h, i) => (
-                  <th key={i} className="px-4 py-3 text-left text-xs font-bold text-zinc-400 uppercase tracking-wider whitespace-nowrap">
-                    {h}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((row, ri) => (
-                <tr key={ri} className="border-b border-zinc-800/50 last:border-0 hover:bg-zinc-900/30 transition-colors">
-                  {row.map((cell, ci) => (
-                    <td key={ci} className={`px-4 py-3 text-sm align-top leading-relaxed ${ci === 0 ? 'font-medium text-zinc-200 w-1/4' : ci === 1 ? 'text-zinc-400 w-1/4' : 'text-zinc-300 w-1/2'}`}>
-                      {cell}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+    <div className="border border-zinc-800 rounded-xl overflow-hidden">
+      {/* Header row */}
+      <button
+        onClick={() => setExpanded(o => !o)}
+        className="w-full flex items-center gap-3 px-5 py-3.5 bg-zinc-900/40 hover:bg-zinc-900/70 transition-colors text-left"
+      >
+        <span className="w-5 h-5 rounded-full bg-purple-500/15 border border-purple-500/20 flex items-center justify-center shrink-0">
+          <span className="text-[10px] font-bold text-purple-400">{index + 1}</span>
+        </span>
+        <span className="text-sm font-semibold text-zinc-200 flex-1">{signal.category}</span>
+        <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-purple-500/15 text-purple-300 shrink-0">
+          +{signal.relevance_score}
+        </span>
+        <svg
+          className={`w-4 h-4 text-zinc-600 shrink-0 transition-transform ${expanded ? 'rotate-180' : ''}`}
+          fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {/* Expanded detail */}
+      {expanded && (
+        <div className="px-5 py-4 space-y-4 border-t border-zinc-800/60">
+          <div>
+            <p className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-2">Internal Indication</p>
+            <p className="text-sm text-zinc-300 leading-relaxed">{signal.internal_indication}</p>
+          </div>
+          <div className="border-t border-zinc-800/40 pt-4">
+            <p className="text-[10px] font-bold text-purple-500/70 uppercase tracking-widest mb-2">Capability Alignment</p>
+            <p className="text-sm text-zinc-300 leading-relaxed">{signal.capability_alignment}</p>
+          </div>
         </div>
       )}
     </div>
   )
 }
 
+function SAPView({ result }: { result: StrategyResult }) {
+  return (
+    <div className="space-y-5">
+      {/* Metadata strip */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <StatPill label="Score" value={`${result.normalized_score}%`} />
+        <StatPill label="Signals Matched" value={String(result.matched_signals.length)} />
+        <StatPill label="Emails" value={String(result.num_emails)} />
+        <StatPill label="Cadence" value={`Every ${result.interval_days}d`} />
+      </div>
+
+      {/* Signal cards */}
+      <div className="space-y-2">
+        {result.matched_signals.map((s, i) => (
+          <SignalCard key={i} signal={s} index={i} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+
 // ─── Main component ──────────────────────────────────────────────────────────
 
 interface Props {
   intelBrief: string | null
-  strategy: { primary_contact?: { name?: string; title?: string; email?: string }; secondary_contact?: { name?: string; title?: string; email?: string } | null } | null
   sapDoc: string | null
+  strategyResult: StrategyResult | null
   emails: StrategyEmail[]
   contacts: Contact[]
   status: string
@@ -174,7 +202,7 @@ function CompetitorEvidence({ analysis }: { analysis: CompetitorAnalysis[] }) {
 }
 
 export function DistrictTabs({
-  intelBrief, strategy, sapDoc, emails, contacts,
+  intelBrief, sapDoc, strategyResult, emails, contacts,
   status, competitor, competitorAnalysis,
 }: Props) {
   const [tab, setTab] = useState<TabId>('intel')
@@ -189,7 +217,7 @@ export function DistrictTabs({
   const tabs: { id: TabId; label: string; icon: React.ReactNode; count?: number }[] = [
     { id: 'intel',    label: 'Intel Brief', icon: <BookOpen className="w-3.5 h-3.5" /> },
     { id: 'contacts', label: 'Contacts',    icon: <Users className="w-3.5 h-3.5" />, count: contacts.length },
-    { id: 'strategy', label: 'Strategy',    icon: <Target className="w-3.5 h-3.5" /> },
+    { id: 'strategy', label: 'Strategy',    icon: <Target className="w-3.5 h-3.5" />, count: strategyResult?.matched_signals.length },
     { id: 'emails',   label: 'Emails',      icon: <Mail className="w-3.5 h-3.5" />, count: emails.length },
   ]
 
@@ -259,13 +287,15 @@ export function DistrictTabs({
         <div>
           {isSkipped ? (
             <SkippedState icon={ShieldAlert} reason={skipReason.replace('intel', 'strategy')} />
-          ) : !sapDoc ? (
+          ) : strategyResult && strategyResult.matched_signals.length > 0 ? (
+            <SAPView result={strategyResult} />
+          ) : sapDoc ? (
+            <IntelBrief md={sapDoc} />
+          ) : (
             <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-12 text-center">
               <Target className="w-8 h-8 text-zinc-700 mx-auto mb-3" />
               <p className="text-sm text-zinc-600">No strategy generated yet.</p>
             </div>
-          ) : (
-            <SAPTable md={sapDoc} />
           )}
         </div>
       )}
