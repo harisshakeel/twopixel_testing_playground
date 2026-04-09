@@ -3,8 +3,8 @@ import { getAllDistricts, getIntelBrief, getSAPDoc, getContacts, getRunMeta } fr
 
 export const dynamic = 'force-dynamic'
 
-export async function GET(_req: Request, { params }: { params: { slug: string } }) {
-  const { slug } = params
+export async function GET(_req: Request, { params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   const { districts } = getAllDistricts()
   const record = districts.find(d => d.slug === slug) ?? null
 

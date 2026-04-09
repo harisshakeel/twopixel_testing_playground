@@ -13,7 +13,10 @@ export function StartPipelineButton() {
     setState('loading')
     setMsg('')
     try {
-      const res = await fetch('/api/pipeline/start', { method: 'POST' })
+      const res = await fetch('/api/pipeline/start', {
+        method: 'POST',
+        headers: { 'Authorization': `Bearer ${process.env.NEXT_PUBLIC_PIPELINE_SECRET}` },
+      })
       const data = await res.json()
       if (data.ok) {
         setState('success')

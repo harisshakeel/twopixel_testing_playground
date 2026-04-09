@@ -1,0 +1,2 @@
+# Normalize line endings to LF on commit, prevent accidental file rewrites
+* text=auto eol=lf

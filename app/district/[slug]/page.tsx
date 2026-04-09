@@ -14,8 +14,8 @@ import { ArrowLeft, ExternalLink, ShieldAlert } from 'lucide-react'
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
-export default function DistrictPage({ params }: { params: { slug: string } }) {
-  const { slug } = params
+export default async function DistrictPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   const { districts } = getAllDistricts()
   const record = districts.find(d => d.slug === slug)
 
