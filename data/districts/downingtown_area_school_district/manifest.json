@@ -1,0 +1,91 @@
+{
+  "district_name": "Downingtown Area School District",
+  "slug": "downingtown_area_school_district",
+  "website_url": "https://www.dasd.org",
+  "row_index": 2,
+  "status": "processed",
+  "tier": "normal",
+  "normalized_score": 58,
+  "competitor_detected": null,
+  "crisis_detected": null,
+  "skip_reason": null,
+  "last_run_ts": "20260410_172124",
+  "last_completed_stage": 8,
+  "stages": {
+    "nces_lookup": {
+      "status": "done"
+    },
+    "url_discovery": {
+      "started_at": "2026-04-10T12:21:40.092822+00:00",
+      "status": "done",
+      "urls_found": 177,
+      "ended_at": "2026-04-10T12:21:47.743879+00:00",
+      "duration_s": 7.65
+    },
+    "url_filtering": {
+      "started_at": "2026-04-10T12:21:47.803962+00:00",
+      "status": "done",
+      "raw_urls": 177,
+      "filtered_urls": 72,
+      "contact_urls": 14,
+      "signal_urls": 70,
+      "both_urls": 12,
+      "pdf_urls": 0,
+      "ended_at": "2026-04-10T12:22:28.846139+00:00",
+      "duration_s": 41.04
+    },
+    "scraping": {
+      "started_at": "2026-04-10T12:22:28.849687+00:00",
+      "status": "done",
+      "contact_pages": 14,
+      "signal_pages": 75,
+      "total_chars": 780707,
+      "ended_at": "2026-04-10T12:31:34.501955+00:00",
+      "duration_s": 545.65
+    },
+    "social_media": {
+      "started_at": "2026-04-10T12:31:34.513603+00:00",
+      "status": "done",
+      "linkedin_posts": 0,
+      "facebook_posts": 20,
+      "signal_posts": 1,
+      "ended_at": "2026-04-10T12:32:20.025880+00:00",
+      "duration_s": 45.51
+    },
+    "intel_extraction": {
+      "started_at": "2026-04-10T12:32:20.025919+00:00",
+      "status": "done",
+      "contacts_found": 52,
+      "intel_chars": 67240,
+      "competitor_detected": null,
+      "competitor_analysis": [],
+      "crisis_detected": null,
+      "ended_at": "2026-04-10T12:39:49.783641+00:00",
+      "duration_s": 449.76
+    },
+    "strategy": {
+      "started_at": "2026-04-10T12:39:49.854451+00:00",
+      "status": "done",
+      "raw_score": 111.0,
+      "normalized_score": 58,
+      "tier": "normal",
+      "signals_matched": 13,
+      "sap_chars": 55237,
+      "num_emails": 4,
+      "interval_days": 4,
+      "model": "claude-sonnet-4-6",
+      "ended_at": "2026-04-10T12:44:11.344358+00:00",
+      "duration_s": 261.49
+    },
+    "email_cadence": {
+      "started_at": "2026-04-10T12:44:11.368820+00:00",
+      "status": "done",
+      "emails_generated": 4,
+      "tier": "normal",
+      "interval_days": 4,
+      "model": "claude-opus-4-6",
+      "ended_at": "2026-04-10T12:44:54.934490+00:00",
+      "duration_s": 43.57
+    }
+  }
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "url": "https://www.dasd.org/about-us/directory",
+    "category": "contact",
+    "reason": "District-wide staff directory"
+  },
+  {
+    "url": "https://www.dasd.org/departments/human-resources/staff",
+    "category": "contact",
+    "reason": "HR department staff contacts"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/senior-leadership",
+    "category": "both",
+    "reason": "Superintendent and cabinet leadership names"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/board-of-school-directors",
+    "category": "both",
+    "reason": "Board of directors members and governance"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/pupil-services-staff",
+    "category": "both",
+    "reason": "Pupil services staff with suicide prevention credentials"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education/special-education-staff",
+    "category": "both",
+    "reason": "Special education leadership names and roles"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/counseling-staff",
+    "category": "both",
+    "reason": "District-wide counseling staff directory"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education/school-psychologists",
+    "category": "both",
+    "reason": "School psychologist staff names and experience"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/prevention-specialists",
+    "category": "both",
+    "reason": "Prevention specialist staff and program roles"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/pupil-services-bio",
+    "category": "both",
+    "reason": "Director of Pupil Services leadership bio"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/senior-leadership/superintendent",
+    "category": "both",
+    "reason": "Superintendent office, leadership and priorities"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/wellness",
+    "category": "both",
+    "reason": "Wellness programs, mental health infrastructure"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education/special-education-staff/bcba",
+    "category": "both",
+    "reason": "BCBA staff, special ed support services"
+  },
+  {
+    "url": "https://www.dasd.org/departments/student-relations-and-school-climate/director-of-srsc-bio",
+    "category": "both",
+    "reason": "SRSC director, climate and equity leadership"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/senior-leadership/supt-evaluations",
+    "category": "signal",
+    "reason": "Superintendent evaluation \u2014 strategic priorities"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/district-initiatives-2/2023-24-strategic-plan",
+    "category": "signal",
+    "reason": "District strategic plan document"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/district-initiatives-2",
+    "category": "signal",
+    "reason": "2025-26 district initiatives and priorities"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/mental-health-services",
+    "category": "signal",
+    "reason": "Research-based mental health support programs"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/mtss-services",
+    "category": "signal",
+    "reason": "MTSS framework and tiered intervention"
+  },
+  {
+    "url": "https://www.dasd.org/departments/business",
+    "category": "signal",
+    "reason": "Business office financial oversight leadership"
+  },
+  {
+    "url": "https://www.dasd.org/departments/facilities/bids",
+    "category": "signal",
+    "reason": "Procurement bids and contracts"
+  },
+  {
+    "url": "https://www.dasd.org/departments/technology/software-systems-descriptions",
+    "category": "signal",
+    "reason": "Full district technology stack inventory"
+  },
+  {
+    "url": "https://www.dasd.org/departments/technology/11-technology-initiative",
+    "category": "signal",
+    "reason": "1:1 device program details"
+  },
+  {
+    "url": "https://www.dasd.org/departments/technology/staff-tech",
+    "category": "signal",
+    "reason": "Staff technology resources and tools"
+  },
+  {
+    "url": "https://www.dasd.org/departments/technology",
+    "category": "signal",
+    "reason": "Technology division overview and systems"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education",
+    "category": "signal",
+    "reason": "Special education services overview"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education/overview-regulatory-information",
+    "category": "signal",
+    "reason": "Special education regulatory framework"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/gifted-education",
+    "category": "signal",
+    "reason": "Gifted education program with GIEPs"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/student-support-plans",
+    "category": "signal",
+    "reason": "Student support plan framework"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/elementary-school-counseling",
+    "category": "signal",
+    "reason": "Elementary counseling program structure"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education/transition-program",
+    "category": "signal",
+    "reason": "Post-secondary transition services"
+  },
+  {
+    "url": "https://www.dasd.org/departments/special-education/early-intervention",
+    "category": "signal",
+    "reason": "Early intervention program details"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning",
+    "category": "signal",
+    "reason": "Instructional vision and curriculum framework"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/curricular-areas",
+    "category": "signal",
+    "reason": "Math instruction and curriculum priorities"
+  },
+  {
+    "url": "https://www.dasd.org/departments/student-relations-and-school-climate",
+    "category": "signal",
+    "reason": "School climate and equity programs"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services",
+    "category": "signal",
+    "reason": "Pupil services hub and programs"
+  },
+  {
+    "url": "https://www.dasd.org/departments/communications/annual-report",
+    "category": "signal",
+    "reason": "District annual report with outcomes data"
+  },
+  {
+    "url": "https://www.dasd.org/departments/human-resources",
+    "category": "signal",
+    "reason": "HR department overview and staffing"
+  },
+  {
+    "url": "http://www.dasd.org/jobs",
+    "category": "signal",
+    "reason": "Active job postings reveal hiring needs"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/community/communities-that-care",
+    "category": "signal",
+    "reason": "Community mental health partnership program"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/stem-counseling",
+    "category": "signal",
+    "reason": "STEM Academy counseling program"
+  },
+  {
+    "url": "https://www.dasd.org/departments/technology/students-parents",
+    "category": "signal",
+    "reason": "Student information system details"
+  },
+  {
+    "url": "https://www.dasd.org/departments/facilities/construction1",
+    "category": "signal",
+    "reason": "Active construction and capital projects"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/news-events/district-news",
+    "category": "signal",
+    "reason": "New programs and district announcements"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/district-initiatives-2/2025-26-budget",
+    "category": "signal",
+    "reason": "Current year budget document"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/district-initiatives-2/2024-25-budget",
+    "category": "signal",
+    "reason": "Prior year budget document"
+  },
+  {
+    "url": "https://www.dasd.org/departments/business/budget",
+    "category": "signal",
+    "reason": "Budget and financial reports hub"
+  },
+  {
+    "url": "https://www.dasd.org/departments/business/purchasing",
+    "category": "signal",
+    "reason": "Procurement and purchasing activity"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/district-initiatives-2/2023-24-strategic-plan/data",
+    "category": "signal",
+    "reason": "Strategic plan data and outcomes"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/board-of-school-directors/meetings-committees",
+    "category": "signal",
+    "reason": "Board meeting agendas and minutes"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/wellness/wellness-annual-report",
+    "category": "signal",
+    "reason": "Wellness annual report, mental health data"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/wellness/paysurvey",
+    "category": "signal",
+    "reason": "Student wellness screening survey tool"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/school-health-nursing-services",
+    "category": "signal",
+    "reason": "Health services hub, nursing infrastructure"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/artificial-intelligence",
+    "category": "signal",
+    "reason": "AI policy and technology initiative"
+  },
+  {
+    "url": "https://www.dasd.org/departments/technology/11-technology-initiative/explore-chromebook",
+    "category": "signal",
+    "reason": "1:1 Chromebook device program"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/i-ready-classroom-mathematics-k-8",
+    "category": "signal",
+    "reason": "i-Ready adaptive math platform, K-8"
+  },
+  {
+    "url": "https://www.dasd.org/departments/student-relations-and-school-climate/climate-survey-and-student-engagement",
+    "category": "signal",
+    "reason": "School climate survey and engagement data"
+  },
+  {
+    "url": "https://www.dasd.org/departments/student-relations-and-school-climate/belonging-at-dasd",
+    "category": "signal",
+    "reason": "Equity and belonging initiative"
+  },
+  {
+    "url": "https://www.dasd.org/departments/student-relations-and-school-climate/scset",
+    "category": "signal",
+    "reason": "School climate team structure and programs"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/title-1-program",
+    "category": "signal",
+    "reason": "Federal grant programs, Title I funding"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/curriculum-review-cycle",
+    "category": "signal",
+    "reason": "Curriculum review and instructional priorities"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/elementary-assessment-and-grading",
+    "category": "signal",
+    "reason": "Assessment framework, grading practices"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/pssa-keystone-exams",
+    "category": "signal",
+    "reason": "State assessment data and accountability"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/english-language-development-eld",
+    "category": "signal",
+    "reason": "ELD program, subgroup support services"
+  },
+  {
+    "url": "https://www.dasd.org/departments/operations-and-programs/performance-goals-standards",
+    "category": "signal",
+    "reason": "District performance goals and standards"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/home-and-school-visitors",
+    "category": "signal",
+    "reason": "Home-school liaison, student support staff"
+  },
+  {
+    "url": "https://www.dasd.org/staff/internal-human-resources",
+    "category": "signal",
+    "reason": "Staff hub, internal tools and systems"
+  },
+  {
+    "url": "https://www.dasd.org/departments/pupil-services/wellness/parent-caregiver-speaker-series",
+    "category": "signal",
+    "reason": "Mental health community programming"
+  },
+  {
+    "url": "https://www.dasd.org/departments/teaching-and-learning/programs-of-study",
+    "category": "signal",
+    "reason": "District programs and course offerings"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/district-initiatives-2/school-of-choice",
+    "category": "signal",
+    "reason": "School choice initiative and structure"
+  },
+  {
+    "url": "https://www.dasd.org/departments/operations-and-programs/30-day-public-review-items",
+    "category": "signal",
+    "reason": "Procurement and policy review items"
+  },
+  {
+    "url": "https://www.dasd.org/about-us/parents/a-childs-place",
+    "category": "signal",
+    "reason": "Student support program details"
+  }
+]

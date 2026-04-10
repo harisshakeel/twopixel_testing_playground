@@ -1,0 +1,452 @@
+{
+  "contact_pages": 14,
+  "signal_pages": 75,
+  "total_chars": 780707,
+  "pages": [
+    {
+      "url": "https://www.dasd.org/about-us/directory",
+      "chars": 4041,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/human-resources/staff",
+      "chars": 3044,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/senior-leadership",
+      "chars": 2624,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/board-of-school-directors",
+      "chars": 5839,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/pupil-services-staff",
+      "chars": 5567,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/special-education-staff",
+      "chars": 9311,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/counseling-staff",
+      "chars": 8023,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/school-psychologists",
+      "chars": 21826,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/prevention-specialists",
+      "chars": 17446,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/pupil-services-bio",
+      "chars": 1767,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/senior-leadership/superintendent",
+      "chars": 2670,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/wellness",
+      "chars": 8922,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/special-education-staff/bcba",
+      "chars": 1968,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/student-relations-and-school-climate/director-of-srsc-bio",
+      "chars": 3466,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/senior-leadership/supt-evaluations",
+      "chars": 1598,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/district-initiatives-2/2023-24-strategic-plan",
+      "chars": 17055,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/district-initiatives-2",
+      "chars": 1306,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/mental-health-services",
+      "chars": 3807,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/mtss-services",
+      "chars": 2321,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/business",
+      "chars": 2089,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/facilities/bids",
+      "chars": 612,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/technology/software-systems-descriptions",
+      "chars": 33679,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/technology/11-technology-initiative",
+      "chars": 17249,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/technology/staff-tech",
+      "chars": 1500,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/technology",
+      "chars": 2669,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education",
+      "chars": 4864,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/overview-regulatory-information",
+      "chars": 1618,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/gifted-education",
+      "chars": 6515,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/student-support-plans",
+      "chars": 3501,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/elementary-school-counseling",
+      "chars": 5834,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/transition-program",
+      "chars": 9812,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/early-intervention",
+      "chars": 4077,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning",
+      "chars": 2034,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/curricular-areas",
+      "chars": 10131,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/student-relations-and-school-climate",
+      "chars": 7021,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services",
+      "chars": 15811,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/communications/annual-report",
+      "chars": 1206,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/human-resources",
+      "chars": 8891,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/community/communities-that-care",
+      "chars": 4612,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/stem-counseling",
+      "chars": 26538,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/technology/students-parents",
+      "chars": 15098,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/facilities/construction1",
+      "chars": 5245,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/news-events/district-news",
+      "chars": 6617,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/district-initiatives-2/2025-26-budget",
+      "chars": 7360,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/district-initiatives-2/2024-25-budget",
+      "chars": 5612,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/business/budget",
+      "chars": 8109,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/business/purchasing",
+      "chars": 27393,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/district-initiatives-2/2023-24-strategic-plan/data",
+      "chars": 17554,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/board-of-school-directors/meetings-committees",
+      "chars": 10370,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/wellness/wellness-annual-report",
+      "chars": 77233,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/wellness/paysurvey",
+      "chars": 3627,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/school-health-nursing-services",
+      "chars": 13836,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/artificial-intelligence",
+      "chars": 842,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/technology/11-technology-initiative/explore-chromebook",
+      "chars": 659,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/i-ready-classroom-mathematics-k-8",
+      "chars": 10786,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/student-relations-and-school-climate/climate-survey-and-student-engagement",
+      "chars": 3890,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/student-relations-and-school-climate/belonging-at-dasd",
+      "chars": 2522,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/student-relations-and-school-climate/scset",
+      "chars": 10730,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/title-1-program",
+      "chars": 7070,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/curriculum-review-cycle",
+      "chars": 5724,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/elementary-assessment-and-grading",
+      "chars": 13939,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/pssa-keystone-exams",
+      "chars": 15823,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/english-language-development-eld",
+      "chars": 7462,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/operations-and-programs/performance-goals-standards",
+      "chars": 6418,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/home-and-school-visitors",
+      "chars": 3884,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/staff/internal-human-resources",
+      "chars": 1460,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/wellness/parent-caregiver-speaker-series",
+      "chars": 15345,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/teaching-and-learning/programs-of-study",
+      "chars": 1421,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/district-initiatives-2/school-of-choice",
+      "chars": 11636,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/operations-and-programs/30-day-public-review-items",
+      "chars": 1506,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/parents/a-childs-place",
+      "chars": 2360,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/senior-leadership",
+      "chars": 2624,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/board-of-school-directors",
+      "chars": 5839,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/pupil-services-staff",
+      "chars": 5567,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/special-education-staff",
+      "chars": 9311,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/counseling-staff",
+      "chars": 8023,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/school-psychologists",
+      "chars": 21826,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/prevention-specialists",
+      "chars": 17446,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/pupil-services-bio",
+      "chars": 1767,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/about-us/senior-leadership/superintendent",
+      "chars": 2670,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/pupil-services/wellness",
+      "chars": 8922,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/special-education/special-education-staff/bcba",
+      "chars": 1968,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://www.dasd.org/departments/student-relations-and-school-climate/director-of-srsc-bio",
+      "chars": 3466,
+      "source": "crawl4ai"
+    },
+    {
+      "url": "https://pnsas.org/Portals/0/About%20SAP/SAP%20Teams/SAP%20FAQ%20revision%202020%20-final_.pdf",
+      "chars": 48468,
+      "source": "pdf"
+    },
+    {
+      "url": "https://go.boarddocs.com/pa/down/Board.nsf/files/D9VQFC67605B/$file/2024%20Oct%209%20PAYS%20Board%20Presentation.pdf",
+      "chars": 4245,
+      "source": "pdf"
+    },
+    {
+      "url": "https://go.boarddocs.com/pa/down/Board.nsf/files/D64R2B6AFE68/$file/2024%20May%20June%20Math%20Curriculum%20Board%20Presentation.pdf",
+      "chars": 6798,
+      "source": "pdf"
+    },
+    {
+      "url": "https://go.boarddocs.com/pa/down/Board.nsf/files/DB9TYT79AF27/$file/2024%20December%20Math%20Board%20Presentation.pdf",
+      "chars": 1965,
+      "source": "pdf"
+    },
+    {
+      "url": "https://go.boarddocs.com/pa/down/Board.nsf/files/DB9TXG797EF8/$file/Enhancing-ELA-Resources-for-Middle-School-Success.pdf",
+      "chars": 7810,
+      "source": "pdf"
+    },
+    {
+      "url": "https://go.boarddocs.com/pa/down/Board.nsf/files/DQBSJ9722A5D/$file/2025-26%20Student%20Achievement%20Jan%2014%202026.pdf",
+      "chars": 7597,
+      "source": "pdf"
+    }
+  ]
+}
