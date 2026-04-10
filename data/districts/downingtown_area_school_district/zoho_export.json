@@ -1,0 +1,352 @@
+{
+  "district_name": "Downingtown Area School District",
+  "state": "PA",
+  "enrollment": 13204,
+  "tier": "normal",
+  "score": 58,
+  "contacts": [
+    {
+      "name": "Dr. Robert O'Donnell",
+      "title": "Superintendent of Schools",
+      "email": "rodonnell@dasd.org",
+      "phone": "Ext. 11105"
+    },
+    {
+      "name": "Louis Chance, Ed.D., BCBA",
+      "title": "Assistant Superintendent K-6",
+      "email": "lchance@dasd.org",
+      "phone": "Ext. 11305"
+    },
+    {
+      "name": "Robert Reed, Ed.D.",
+      "title": "Assistant Superintendent 7-12",
+      "email": "rreed@dasd.org",
+      "phone": "Ext. 11205"
+    },
+    {
+      "name": "Audrey Blust",
+      "title": "President, Director - Region 1 (Upper Uwchlan 1, 2, Wallace)",
+      "email": "ablust@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Joyce Houghton",
+      "title": "Vice President, Director - Region 9 (West Bradford 1, 3, 5)",
+      "email": "jhoughton@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Kimberlee Gardner",
+      "title": "Assistant Director of Human Resources",
+      "email": "kgardner@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11602"
+    },
+    {
+      "name": "Dr. Caroline Duda",
+      "title": "Director of Human Resources",
+      "email": "cduda@dasd.org",
+      "phone": "(610) 269-8460"
+    },
+    {
+      "name": "Ann Berrios, Ed.D.",
+      "title": "Director of Pupil Services",
+      "email": "aberrios@dasd.org",
+      "phone": "Ext. 11401"
+    },
+    {
+      "name": "Justin Brown, M.A.",
+      "title": "Director of Student Relations and School Climate",
+      "email": "jbrown@dasd.org",
+      "phone": "Ext. 11150"
+    },
+    {
+      "name": "Gary J. Mattei, Ed.D.",
+      "title": "Director of Technology",
+      "email": "gmattei@dasd.org",
+      "phone": "Ext. 11501"
+    },
+    {
+      "name": "Jennifer Shealy, M.S.",
+      "title": "Director of Communications",
+      "email": "jshealy@dasd.org",
+      "phone": "Ext. 11120"
+    },
+    {
+      "name": "Kelly Harper",
+      "title": "Director of Facilities",
+      "email": "kharper@dasd.org",
+      "phone": "Ext. 11801"
+    },
+    {
+      "name": "Jane Bertone",
+      "title": "Director - Region 7 (Downingtown WN, EE, EW, WS)",
+      "email": "jbertone@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Caryn McCleary Ghrayeb",
+      "title": "Director - Region 5 (Uwchlan 2, 8, East Caln 1)",
+      "email": "cghrayeb@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Madhu Gurthy",
+      "title": "Director - Region 2 (Upper Uwchlan 3, West Pikeland)",
+      "email": "mgurthy@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Erin Todorovac",
+      "title": "Director - Region 4 (Uwchlan 1, 3, 4, 5, 9)",
+      "email": "etodorovac@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Mindy Ross",
+      "title": "Director - Region 8 (East Caln 2, West Bradford 2, 4)",
+      "email": "mross@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Lisa Strobridge",
+      "title": "Director - Region 3 (East Brandywine N1, N2, S)",
+      "email": "lstrobridge@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "LeeAnn Wisdom",
+      "title": "Director - Region 6 (Uwchlan 6, 7)",
+      "email": "lwisdom@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Bryan Howett",
+      "title": "Business Manager",
+      "email": "bhowett@dasd.org",
+      "phone": "Ext. 11705"
+    },
+    {
+      "name": "Meredith Adams",
+      "title": "Supervisor Of Special Education",
+      "email": "meadams@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Jamie Nunery, DSW, LSW",
+      "title": "Student Services Supervisor",
+      "email": "jnunery@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11413"
+    },
+    {
+      "name": "Kristin Welk",
+      "title": "Supervisor of Pupil Services",
+      "email": "kwelk@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11412"
+    },
+    {
+      "name": "Kimberly Bankes , M.Ed.",
+      "title": "Supervisor of Special Education -Transition Program - Low Incidence - 9-12+",
+      "email": "kbankes@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11417"
+    },
+    {
+      "name": "Shannon Kirk, M.Ed.",
+      "title": "Supervisor of Special Education - Elementary",
+      "email": "skirk@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11415"
+    },
+    {
+      "name": "Jennifer Maley, M.Ed.",
+      "title": "Supervisor of Special Education - Low Incidence K-8",
+      "email": "jmaley@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11414"
+    },
+    {
+      "name": "Sallie Seidel, Ed.D",
+      "title": "Supervisor of Special Education - Middle Level",
+      "email": "sseidel@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11416"
+    },
+    {
+      "name": "Susan Schemering",
+      "title": "Administrative Assistant to the Director of Pupil Services",
+      "email": "sschemering@dasd.org",
+      "phone": "Ext. 11405"
+    },
+    {
+      "name": "Ellen Adler",
+      "title": "",
+      "email": "eadler@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Sarah Brooks",
+      "title": "Student Assistance Specialist",
+      "email": "sbrooks@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11453"
+    },
+    {
+      "name": "Bridget Bisaccio",
+      "title": "School Psychologist",
+      "email": "bbisaccio@dasd.org",
+      "phone": "(610) 269-6021, Ext. 11466"
+    },
+    {
+      "name": "Anja Kotsopoulos",
+      "title": "School Psychologist",
+      "email": "akotsopoulos@dasd.org",
+      "phone": "(610) 458-5324, Ext. 11483"
+    },
+    {
+      "name": "Dr. Janice Pietrowicz",
+      "title": "School Psychologist",
+      "email": "jpietrowicz@dasd.org",
+      "phone": "(610) 458-5324, Ext. 11418"
+    },
+    {
+      "name": "Amanda Sharp",
+      "title": "School Psychologist",
+      "email": "asharp@dasd.org",
+      "phone": "(610) 269-2790, Ext. 11471"
+    },
+    {
+      "name": "Meghan Sirianni",
+      "title": "School Psychologist",
+      "email": "msirianni@dasd.org",
+      "phone": "(610) 458-8703, Ext. 11456"
+    },
+    {
+      "name": "Lauren Smith",
+      "title": "School Psychologist",
+      "email": "lsmith@dasd.org",
+      "phone": "(610) 942-8950, Ext. 11476"
+    },
+    {
+      "name": "Jennifer Stout",
+      "title": "School Psychologist",
+      "email": "jstout@dasd.org",
+      "phone": "(610) 363-6580, Ext. 11455"
+    },
+    {
+      "name": "Jonathan Veser",
+      "title": "School Psychologist",
+      "email": "jveser@dasd.org",
+      "phone": "(610) 269-6021, Ext. 11456"
+    },
+    {
+      "name": "Jennifer Bender",
+      "title": "School Psychologist",
+      "email": "jbender@dasd.org",
+      "phone": "(610) 363-6400, Ext. 11461"
+    },
+    {
+      "name": "Megan Dietterick",
+      "title": "School Psychologist",
+      "email": "mdietterick@dasd.org",
+      "phone": "(610) 646-0080, Ext. 11458"
+    },
+    {
+      "name": "Erin Connolly",
+      "title": "Prevention Specialist",
+      "email": "econnolly@dasd.org",
+      "phone": "(610) 269-8460, Ext. 24508"
+    },
+    {
+      "name": "Rena Davis",
+      "title": "Prevention Specialist",
+      "email": "redavis@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11478"
+    },
+    {
+      "name": "Karen Giannone",
+      "title": "Prevention Specialist",
+      "email": "kgiannone@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11479"
+    },
+    {
+      "name": "Natalie Martinez",
+      "title": "Prevention Specialist",
+      "email": "nmartinez@dasd.org",
+      "phone": "(610) 269-8460, Ext. 20515"
+    },
+    {
+      "name": "Laura Sirico",
+      "title": "Prevention Specialist",
+      "email": "lsirico@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11474"
+    },
+    {
+      "name": "Michelle Cello",
+      "title": "Prevention Specialist",
+      "email": "mcello@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11470"
+    },
+    {
+      "name": "Karen Cook",
+      "title": "Prevention Specialist",
+      "email": "kcook@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11464"
+    },
+    {
+      "name": "Kristen Walsleben",
+      "title": "Prevention Specialist",
+      "email": "kwalsleben@dasd.org",
+      "phone": "(610) 524-6300, Ext. 36240"
+    },
+    {
+      "name": "Renee Welsh",
+      "title": "Prevention Specialist",
+      "email": "rwelsh@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11459"
+    },
+    {
+      "name": "Beth O'Rourke",
+      "title": "Prevention Specialist",
+      "email": "borourke@dasd.org",
+      "phone": "(610) 269-8460, Ext. 11460"
+    },
+    {
+      "name": "Virginia Warihay",
+      "title": "Executive Assistant",
+      "email": "vwarihay@dasd.org",
+      "phone": ""
+    },
+    {
+      "name": "Laura Huxoll, Ed.D, BCBA",
+      "title": "Behavioral Specialist - Elementary",
+      "email": "lhuxoll@dasd.org",
+      "phone": "(610) 269-8460 Ext# 11468"
+    }
+  ],
+  "emails": [
+    {
+      "email_number": 1,
+      "subject_line": "DASD's screening committee and the norming question",
+      "body": "Dr. Chance,\n\nThe depth of DASD's investment in student support infrastructure, from the PBIS recognition across multiple buildings to the breadth of your prevention specialist network, reflects a district that takes whole-child coordination seriously at a systems level rather than treating it as aspirational language.\n\nWhat caught my attention, though, is the universal screening committee's active evaluation of alternatives to the BESS for grades 3-9. That decision point suggests leadership may be grappling with a question that goes beyond instrument selection: whether a nationally normed screener is producing risk classifications that are both actionable and capacity-appropriate for a district serving 16 schools with varied community contexts. The distinction between national norming and local, building-level norming is not merely methodological; it has real implications for how many students are flagged relative to the clinical infrastructure available to serve them.\n\nI am curious whether the committee's evaluation is primarily focused on instrument coverage, or whether the norming methodology itself, and its downstream effects on caseload volume, is part of the conversation.\n\nNaren\nMetamorphix",
+      "send_day": "Day 1"
+    },
+    {
+      "email_number": 2,
+      "subject_line": "Following up - the gap between screening and progress monitoring",
+      "body": "Dr. Chance,\n\nI hope the start of the week is treating you well.\n\nFollowing up on my note about the screening committee's evaluation, I want to raise a related dimension that I think may compound the challenge. Even when a screener successfully identifies students with internalizing symptoms, anxiety, withdrawal, or persistent low mood, the question of whether those students are actually improving once they receive support is a separate and equally consequential problem. Population-level instruments like the Pennsylvania Youth Survey provide valuable trend data, but by design they cannot track whether an individual student receiving counseling or prevention specialist support is responding to that specific intervention over time.\n\nFor prevention specialists managing complex, multi-building caseloads, the absence of a systematic, standardized progress monitoring protocol for mental health supports may mean that intervention adjustments depend more on clinical judgment and periodic team review than on continuous, structured data. Cascades' Measurement Based Care capability is designed to address precisely this gap, providing counselors and prevention specialists with routine, standardized self-reported questionnaires that generate visual symptom trends over time, so that non-response is identified and addressed before the next SAP team review cycle rather than after it.\n\nThis would complement rather than replace the structured team-based processes DASD already has in place, layering individual-level longitudinal data into a workflow that currently appears to rely on broader survey instruments and professional judgment.\n\nI would welcome your perspective on whether this framing resonates with what your K-6 teams are navigating.\n\nNaren\nMetamorphix",
+      "send_day": "Day 5"
+    },
+    {
+      "email_number": 3,
+      "subject_line": "A pattern across suburban PA districts",
+      "body": "Dr. Chance,\n\nI hope the week is going smoothly for you.\n\nIn talking to suburban Pennsylvania districts of similar size and complexity, a consistent pattern emerges: the academic side of MTSS tends to be well-systematized, with universal screeners, progress monitoring protocols, and clear tier movement criteria, while the behavioral and mental health side of the same framework operates with less structural consistency. Screening may be in place, but the path from a flagged student to an assigned, tracked, and documented intervention often relies on manual coordination across multiple platforms and team-based judgment rather than a unified workflow.\n\nFor districts running MTSS, PBIS, and SAP simultaneously, each generating its own data stream across separate tools, the challenge is not a lack of effort or investment; it is the absence of a connective layer that translates identification data into managed, monitored intervention. That connective tissue, the infrastructure between screening and documented outcome, seems to be the gap that most consistently affects defensibility and fidelity across buildings.\n\nI am curious whether that pattern mirrors what you observe across DASD's ten elementary schools, or whether the K-6 side has achieved more consistency than what I typically hear described.\n\nNaren\nMetamorphix",
+      "send_day": "Day 9"
+    },
+    {
+      "email_number": 4,
+      "subject_line": "Small group intervention management across 16 buildings",
+      "body": "Dr. Chance,\n\nI hope this finds your team in good rhythm as the year progresses.\n\nOne area where I think Cascades' technical architecture may be particularly relevant to DASD's K-6 infrastructure is small group intervention management. The district's MTSS framework describes fluid tier movement based on progress monitoring data, and the adoption of i-Ready Classroom Mathematics with its integrated intervention support signals that leadership has recognized the importance of systematic intervention design. What may still be operating largely at the building level, however, is the process of forming and regrouping students based on specific skill gaps rather than broad tier placement, tracking intervention fidelity across schools, and identifying non-responders before the next scheduled review cycle.\n\nCascades' small group intervention capability forms groups based on specific skill or intervention needs using assessment data, and the platform's progress monitoring module continuously tracks student response using visual data trends, enabling MTSS teams to adjust group composition and intervention approaches dynamically rather than waiting for periodic review windows. For DASD's math specialists at the Title I schools, this would provide a systematic, data-driven method for matching students to specific interventions based on diagnostic profiles, whether the gap is in number sense, fluency, or proportional reasoning, rather than relying on the judgment-based process that naturally varies across buildings.\n\nFor your monthly K-6 administrative team walkthroughs, the platform's organizational-level analytics would also provide the cross-building visibility needed to identify where implementation fidelity is strongest and where additional coaching support might be warranted.\n\nI would be glad to explore whether this capability aligns with the intervention management challenges your elementary teams are working through.\n\nNaren\nMetamorphix",
+      "send_day": "Day 13"
+    }
+  ],
+  "primary_contact": {
+    "name": "Dr. Robert O'Donnell",
+    "title": "Superintendent of Schools",
+    "email": "rodonnell@dasd.org"
+  }
+}

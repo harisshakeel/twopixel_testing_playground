@@ -1,0 +1,18 @@
+[
+  {
+    "district_name": "Downingtown Area School District",
+    "row_index": 2,
+    "website_url": "https://www.dasd.org",
+    "status": "processed",
+    "tier": "normal",
+    "normalized_score": 58,
+    "output_file": "downingtown_area_school_district_intel.md",
+    "skip_reason": null,
+    "competitor": null,
+    "competitor_analysis": [],
+    "crisis": null,
+    "started_at": "20260410_172124",
+    "completed_at": "20260410_172124",
+    "slug": "downingtown_area_school_district"
+  }
+]
